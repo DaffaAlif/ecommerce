@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 
 // ** Third Party Components
 import { useKeenSlider } from 'keen-slider/react'
-import ProductCard from './Product'
+import ProductCard from './product'
 
 const SwiperFreeMode = ({ direction }) => {
   // ** Hook
