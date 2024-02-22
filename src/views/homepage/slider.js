@@ -9,7 +9,7 @@ const SwiperFreeMode = ({ direction }) => {
   // ** Hook
   const [ref] = useKeenSlider({
     loop: true,
-    mode: 'free',
+    mode: 'snap',
     rtl: direction === 'rtl',
     slides: {
       perView: 2,
@@ -23,17 +23,18 @@ const SwiperFreeMode = ({ direction }) => {
         <ProductCard />
       </Box>
       <Box className='keen-slider__slide'>
-      <ProductCard />
+        <ProductCard />
       </Box>
       <Box className='keen-slider__slide'>
-      <ProductCard />
+         <ProductCard />
       </Box>
       <Box className='keen-slider__slide'>
-      <ProductCard />
+        <ProductCard />
       </Box>
       <Box className='keen-slider__slide'>
-      <ProductCard />
+        <ProductCard />
       </Box>
+      
     </Box>
   )
 }

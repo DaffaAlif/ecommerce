@@ -21,33 +21,18 @@ import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
 const data = [
   {
     title: 'Slide 1',
-    img: '/images/cards/graphic-illustration-1.png',
-    details: {
-      Sessions: '28%',
-      'Page Views': '3.1k',
-      Leads: '1.2k',
-      Conversions: '12%'
-    }
+    img: '/images/banners/iphone_long_banner.png',
+
   },
   {
     title: 'Slide 2',
-    img: '/images/cards/graphic-illustration-2.png',
-    details: {
-      Spend: '12h',
-      Orders: '18',
-      Order: '127',
-      Items: '2.3k'
-    }
+    img: '/images/banners/iphone_long_banner.png',
+
   },
   {
     title: 'Slide 3',
-    img: '/images/cards/graphic-illustration-3.png',
-    details: {
-      Direct: '268',
-      Organic: '890',
-      Referral: '62',
-      Campaign: '1.2k'
-    }
+    img: '/images/banners/iphone_long_banner.png',
+
   }
 ]
 
@@ -62,28 +47,17 @@ const Slides = ({ theme }) => {
             sx={{ p: 6, '& .MuiTypography-root': { color: 'common.white' } }}
           >
             <Grid container>
-              <Grid item xs={12} sm={8} sx={{ order: [2, 1] }}>
-                <Typography variant='h6' sx={{ mb: 4.5 }}>
-                  {slide.title}
-                </Typography>
-                
-              </Grid>
+    
               <Grid
                 item
-                xs={12}
-                sm={4}
+              
                 sx={{
                   order: [1, 2],
                   textAlign: 'center',
                   '& img': {
-                    height: '160px !important',
-                    maxWidth: 'none !important',
-                    [theme.breakpoints.up('sm')]: {
-                      top: '50%',
-                      position: 'absolute',
-                      right: theme.spacing(6),
-                      transform: 'translateY(-50%)'
-                    }
+                    height: 'none !important',
+                    maxWidth: 'none !important'
+                    
                   }
                 }}
               >
@@ -152,9 +126,9 @@ const AnalyticsWebsiteAnalyticsSlider = () => {
   )
 
   return (
-    <Card sx={{ position: 'relative', backgroundColor: 'primary.main', minHeight:"100px" }}>
+    <Card sx={{ position: 'relative', backgroundColor: 'black', minHeight:"368px", border:"none" }}>
       {loaded && instanceRef.current && (
-        <Box className='swiper-dots' sx={{ bottom: 4, right: 6, position: 'absolute' }}>
+        <Box className='swiper-dots' sx={{ bottom: 4, right: 6, position: 'absolute', m : 5, p: 5 }}>
           {[...Array(instanceRef.current.track.details.slides.length).keys()].map(idx => {
             return (
               <Badge

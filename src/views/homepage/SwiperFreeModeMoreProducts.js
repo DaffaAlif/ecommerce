@@ -3,16 +3,16 @@ import Box from '@mui/material/Box'
 
 // ** Third Party Components
 import { useKeenSlider } from 'keen-slider/react'
-import ProductCardCategory from './category'
+import ProductCard from './product'
 
-const SwiperFreeModeCategory = ({ direction }) => {
+const SwiperFreeModeMoreProduct = ({ direction }) => {
   // ** Hook
   const [ref] = useKeenSlider({
     loop: true,
     mode: 'snap',
     rtl: direction === 'rtl',
     slides: {
-      perView: 6,
+      perView: 4,
       spacing: 10
     }
   })
@@ -20,25 +20,27 @@ const SwiperFreeModeCategory = ({ direction }) => {
   return (
     <Box ref={ref} className='keen-slider'>
       <Box className='keen-slider__slide'>
-        <ProductCardCategory />
+        <ProductCard sx={{m:1}}/>
+        <ProductCard sx={{m:1}}/>
       </Box>
       <Box className='keen-slider__slide'>
-        <ProductCardCategory />
+      <ProductCard sx={{m:1}}/>
+        <ProductCard sx={{m:1}}/>
       </Box>
       <Box className='keen-slider__slide'>
-        <ProductCardCategory />
+      <ProductCard sx={{mb:1}}/>
+        <ProductCard sx={{m:1}}/>
       </Box>
       <Box className='keen-slider__slide'>
-        <ProductCardCategory/>
+      <ProductCard sx={{m:1}}/>
+        <ProductCard sx={{m:1}}/>
       </Box>
       <Box className='keen-slider__slide'>
-        <ProductCardCategory/>
-      </Box>
-      <Box className='keen-slider__slide'>
-        <ProductCardCategory/>
+        <ProductCard sx={{m:1}}/>
+        <ProductCard sx={{m:1}}/>
       </Box>
     </Box>
   )
 }
 
-export default SwiperFreeModeCategory
+export default SwiperFreeModeMoreProduct

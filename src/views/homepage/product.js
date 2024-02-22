@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent'
 const ProductCard = () => {
   return (
     <>
-    <Card>
+    <Card sx={{m:2}}>
       <CardMedia sx={{ height: '9.375rem' }} image='/images/cards/watch-on-hand.jpg' />
       <CardContent sx={{ p: theme => `${theme.spacing(3, 5.25, 4)} !important` }}>
         <Typography variant='h5' sx={{ mb: 2 }}>

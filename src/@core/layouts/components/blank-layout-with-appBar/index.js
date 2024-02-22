@@ -40,7 +40,7 @@ const BlankLayoutAppBar = () => {
   <>
     <Box sx={{display:"flex", justifyContent:"center", bgcolor:"black"}}>
       <Typography variant="caption" sx={{color: "white", m: 2}}> Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</Typography>
-      <Typography variant="caption" sx={{color: "white", m: 2, fontWeight:"Bold"}}> Shop Now</Typography>
+      <Typography variant="caption" sx={{color: "white", m: 2, fontWeight:"Bold", textDecoration:'underline'}}> Shop Now</Typography>
     </Box>
     <AppBar
       color='default'
@@ -94,7 +94,7 @@ const BlankLayoutAppBar = () => {
             display:"flex",
             alignItems:"center",
             minWidth:"100%",
-            justifyContent:"space-around"
+            justifyContent:'space-around'
           }}>
             <CustomTextField
             id='input-with-icon-textfield'

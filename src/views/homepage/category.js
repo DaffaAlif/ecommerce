@@ -8,9 +8,9 @@ import Typography from '@mui/material/Typography'
 const ProductCardCategory = () => {
   return (
     <>
-      <Card sx={{display:"flex", flexDirection:"column" ,minHeight:"200px", minWidth:"200px", alignItems:"center", justifyContent:"center"}}>
-        <Icon icon='tabler:heart' sx={{m: 2, color:"black"}} />
-        <Typography>Category</Typography>
+      <Card sx={{display:"flex", flexDirection:"column" , minHeight:"150px", Width:"150px", alignItems:"center", justifyContent:"center"}}>
+        <Icon icon='tabler:heart' sx={{ color:"black"}} />
+        <Typography variant='caption'>Category</Typography>
       </Card>
     </>
   )
